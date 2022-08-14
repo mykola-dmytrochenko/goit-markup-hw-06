@@ -550,9 +550,10 @@ button {
     background-color: #2196F3;
 }
 
-/* ==================footer-form================= */
+/* ===========================================footer-form===================================== */
 .modal-footer {
-    margin-left: 93px;
+    margin-left: auto;
+
 }
 
 .form-footer-item {
@@ -564,6 +565,17 @@ button {
     color: #FFFFFF;
     margin-bottom: 20px;
     align-items: center;
+}
+
+.modal-form-input-mail {
+    position: absolute;
+    top: 55%;
+    left: 15px;
+    transform: translate(0, -50%);
+    display: block;
+    width: 47px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .icon-button-form {
@@ -579,6 +591,7 @@ button {
     height: 50px;
     margin-right: 12px;
     color: #EEEEEE;
+    transition: box-shadow 250ms var(--transition);
 }
 
 .form-input-footer:focus {
@@ -592,12 +605,17 @@ button {
     height: 50px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background: #2196F3;
     border-radius: 4px;
     border-color: #2196F3;
+    transition: box-shadow 250ms var(--transition);
+}
+
+.footer-form-button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ===========================================portfolio======================================== */
@@ -727,6 +745,7 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
+    height: 581px;
     background-color: #FFF;
     padding: 40px;
 }
@@ -758,7 +777,8 @@ button {
 }
 
 .close-btn {
-    transition: fill #000;
+    fill: #777;
+    transition: fill 250ms var(--transition);
 }
 
 .backdrop.is-hidden {
@@ -767,14 +787,14 @@ button {
     pointer-events: none;
 }
 
-/* =====================modal-form======================== */
+/* ===================================================modal-form============================================================ */
 .form-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
-
+    margin-bottom: 12px;
     color: #212121;
 }
 
@@ -790,9 +810,9 @@ button {
 .modal-form-desc {
     display: block;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
     color: #757575;
 }
 
@@ -803,6 +823,7 @@ button {
     border-radius: 4px;
     padding-left: 40px;
     color: #000;
+    transition: border-color 250ms var(--transition);
 }
 
 .modal-form-input:focus {
@@ -817,7 +838,7 @@ button {
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-
+    transition: border-color 250ms var(--transition);
 }
 
 .modal-form-message::placeholder {
@@ -836,10 +857,9 @@ button {
 
 .modal-form-submit {
     display: flex;
-    min-width: 200px;
-    height: 60px;
     justify-content: center;
     align-items: center;
+    padding: 10px 52px;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -850,8 +870,7 @@ button {
     border-radius: 4px;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 40px;
-
+    transition: box-shadow 250ms var(--transition);
 }
 
 .modal-form-submit:focus {
@@ -870,18 +889,10 @@ button {
     display: block;
     width: 18px;
     height: 18px;
+    transition: fill 250ms var(--transition);
 }
 
-.modal-form-input-mail {
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    transform: translate(0, -50%);
-    display: block;
-    width: 47px;
-    height: 20px;
-    color: rgba(255, 255, 255, 0.6);
-}
+
 
 .modal-form-input-wrapper {
     position: relative;
@@ -904,6 +915,7 @@ button {
     border: 0.2px solid #757575;
     border-radius: 4px;
     margin-right: 10px;
+    transition: border-color, background-color, background-image 250ms var(--transition);
 
 }
 
@@ -922,7 +934,7 @@ button {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .checkbox-link {
